@@ -5,12 +5,19 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    --corBg: #ededed;
+    --corLetra: #000000;
+    --transparente: hsla(261, 92%, 15%, 0.068); 
+    --corEspecial: #c9751b;
+    --corEspecial2:#ef652a;
 
     font-family: 'Comfortaa';
 }
 
+
 body{
-    background-color: #ededed;
+    background-color: var(--corBg);
+    color: var(--corLetra);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,25 +27,29 @@ body{
 header{
     width: 100%;
     height: 50px;
+
+    font-size: 1.3rem;
+    color: var(--corLetra);
+    font-weight: 700;
+
+    padding: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 1.3rem;
-    color: black;
+
     transition: .5s;
-    padding: 2rem;
-    font-weight: 700;
 }
 
 header:hover{
     height: 90px;
-    background-color: hsla(261, 92%, 15%, 0.068);
+    background-color: var(--transparente);
 }
 
-
-header a:visited, header a::after{
-    color: black;
+header a,header a:visited{
+    color: var(--corLetra);
 }
+
 
 #nome{
     font-size: 2rem;
@@ -52,83 +63,88 @@ header a:visited, header a::after{
 }
 
 #partes a:hover{
-    color: #c9751b;
+    color: var(--corEspecial);
     transition: .3s;
 }
 
-#email{
+#email,#temaBtn{
     font-weight: 700;
-    width: 7%;
+    text-align: center;
+    
+    border: 3px solid var(--corLetra);
     border-radius: 10px;
     padding: .5rem;
-    border: 3px solid black;
-    text-align: center;
     transition: .5s;
 }
 
-#email:hover {
+#email:hover, #temaBtn:hover {
+    background-color: var(--corLetra);
     border-radius: 50px;
+    color: var(--corBg);
     transition: .5s;
-    background-color: black;
-    color: #ededed;
 }
 
 /* Main */
 main{
     padding: 2rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#externo{
-    width: 35%;
+#externo,#interno{
     position: absolute;
-    animation-name: rodarDireita;
+    z-index: -1;
+
     animation-iteration-count: infinite;
     animation-duration: 20s;
+}
+
+#externo{
+    width: 35%;
     left: 250px;
-    z-index: -1;
+    animation-name: rodarDireita;
 }
 
 #interno{
     width: 20%;
-    position: absolute;
-    animation-name: rodarEsquerda;
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
     left: 400px;
-    z-index: -1;
+    animation-name: rodarEsquerda;
 }
+
 /* Principal */
 #inicial{
     height: 600px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 h1{
+    border-bottom: 5px solid var(--corLetra);
+    padding-bottom: 1rem;
+
     font-size: 3rem;
     text-align: center;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 5px solid black;
 }
 
 .titulo{
-    font-weight: 700;
-    color: #c9751b;
-    font-size: 3rem;
-    border-bottom: 5px solid #c9751b;
+    border-bottom: 5px solid var(--corEspecial);
     margin: 25px;
+
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--corEspecial);
 }
 
 #habilidades{
-    background-color: hsla(261, 92%, 15%, 0.068);
-    padding: 3rem;
+    background-color: var(--transparente);
     border-radius: 50px;
+    padding: 3rem;
+    
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -148,36 +164,43 @@ h1{
 
 .infos{
     height: 100px;
+
     font-size: 3rem;
     font-weight: 700;
-    color: #ef652a;
+    color: var(--corEspecial2);
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 #projetos{
-    background-color: hsla(261, 92%, 15%, 0.068);
+    background-color: var(--transparente);
     border-radius: 50px;
+    padding: 2rem;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    padding: 2rem;
 }
 
 #projetos .card{
-    padding: 10px;
     width: 45%;
-    border: 5px solid #c9751b;
+    border: 5px solid var(--corEspecial);
+    padding: 10px;
 }
 
 .projetosIcone{
     width: 40%;
 }
 
-#projetos .linguagens{
-    width: 50%;
+.projetosIcone img{
+    width: 300px;
+}
+
+.iconeHabilidade{
+    width: 20%;
 }
 
 .descricao{
@@ -190,8 +213,9 @@ h1{
 
 #sobre{
     margin: 40px;
-    display: flex;
     padding: 20px;
+
+    display: flex;
     justify-content: center;
 }
 
@@ -202,9 +226,19 @@ h1{
 #info{
     width: 50%;
     margin-left: 30px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#projetos .linguagens{
+    display: flex;
+    align-items: center;
+}
+
+.linguagens .iconeHabilidade{
+    width: 10%;
 }
 
 #descri{
@@ -215,22 +249,23 @@ h1{
 footer{
     width: 100%;
     height: 300px;
+    padding: 2rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 2rem;
 }
 
 .subTitulo{
-    text-align: center;
     font-size: 3rem;
+    text-align: center;
 }
 
 #social{
-    color: #ef652a;
     font-size: 6rem;
+    color: var(--corEspecial2);
 }
 
 @keyframes rodarDireita{

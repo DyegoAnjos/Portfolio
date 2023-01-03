@@ -1,4 +1,5 @@
 const habilidades = document.querySelector("#habilidades")
+const projects = document.querySelector("#projetos")
 
 function infos(){
     // Linguagens
@@ -56,5 +57,76 @@ function infos(){
         }
 
         divInfos[i].style.color = linguagens[i].cor   
+    }
+
+    //Projetos
+    for(var i=0;i<projetos.length;i++){
+        const card=document.createElement("div")
+        card.setAttribute("class", "card")
+        projects.appendChild(card)
+        const cardDiv=document.querySelectorAll("#projetos .card")
+
+        const link = document.createElement("a")
+        link.setAttribute("href", projetos[i].linkProjeto)
+        link.setAttribute("target", "_blank")
+        link.setAttribute("class", "projetosIcone")
+        cardDiv[i].appendChild(link)
+        const linkA = document.querySelectorAll(".projetosIcone")
+
+
+        const porjetoImg=document.createElement("img")
+        porjetoImg.setAttribute("src", "imgs/Projetos/"+projetos[i].foto)
+        porjetoImg.setAttribute("alt", projetos[i].nome)
+        linkA[i].appendChild(porjetoImg)
+
+        const infosProjetos = document.createElement("div")
+        infosProjetos.setAttribute("class", "infos infoProjeto")
+        cardDiv[i].appendChild(infosProjetos)
+        const infosProjetosDiv = document.querySelectorAll(".infoProjeto")
+
+        const stacks = document.createElement("div")
+        stacks.setAttribute("class", "linguagens")
+        infosProjetosDiv[i].appendChild(stacks)
+        const stacksDiv=document.querySelectorAll(".linguagens")
+        
+        const descricao=document.createElement("p")
+        descricao.setAttribute("class", "descricao")
+        descricao.innerText=projetos[i].descricao
+        infosProjetosDiv[i].appendChild(descricao)
+
+        for(let j=0;j<projetos[i].linguagensUsadas.length;j++){
+            const habilidadesUsadas = document.createElement("img")
+            habilidadesUsadas.setAttribute("src","imgs/logos/"+projetos[i].linguagensUsadas[j])
+            habilidadesUsadas.setAttribute("alt", "linguagem")
+            habilidadesUsadas.setAttribute("class", "iconeHabilidade")
+            stacksDiv[i].appendChild(habilidadesUsadas)
+        }
+    }
+}
+
+const temaFolha = document.getElementById("tema")
+const temaBtn = document.getElementById("temaBtn")
+const externo = document.querySelector("#externo") 
+const interno = document.querySelector("#interno") 
+
+// console.log(bg)
+function mudarTema(id){
+    if(id === 1){
+        id=2
+        temaFolha.setAttribute("href", "css/white-style.css")
+        temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
+        interno.setAttribute("src","imgs/animacao/interno.png")
+        externo.setAttribute("src","imgs/animacao/externo.png")
+        temaBtn.innerText="Dark Mode"
+    }
+
+    else if(id === 2){
+        temaFolha.setAttribute("href", "css/dark-style.css")
+        id=1
+        temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
+        interno.setAttribute("src","imgs/animacao/internoDark.png")
+        externo.setAttribute("src","imgs/animacao/externoDark.png")
+        temaBtn.innerText="White Mode"
+        
     }
 }
