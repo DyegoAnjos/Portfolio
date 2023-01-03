@@ -7,52 +7,67 @@
     <title>Dyego Anjos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="infos()">
     <header>
-        <h1>Dyego Anjos</h1>
-        <nav>
-            <p>Sobre</p>
-            <p>Habilidades</p>
-            <p>Projetos</p>
+        <p id="nome">Dyego Anjos</p>
+        <nav id="partes">
+            <a href="#habilidades" target="_self">habilidades</a>
+            <a href="#sobre" target="_self">sobre</a>
+            <a href="#projetos" target="_self">projetos</a>
         </nav>
-        <nav>
-            <a href="" target="_blank"><img src="" alt="Linkdin"> Linekdin</a>
-            <a href="" target="_blank"><img src="" alt="GitHub"> GitHub</a>
-            <a href=""></a>
-        </nav>
+        <a href="mailto:dyegocordeiro2007@gmail.com" id="email">Email</a>
     </header>
     <main>
-        <div id="principal">
-            <div class="card">
-                <p>Hello.inerText=</p>
-                <h1>"Dyego Anjos"</h2>
-                <p>Front-end<br>o programador</p>
-            </div>
-            <div id="mudar">
-                <img src="" alt="Front-end">
-                <img src="" alt="Misto">
-                <img src="" alt="Programacao">
-            </div>
+        <div id="inicial">
+            <img src="imgs/animacao/Externo.png" alt="" id="externo">
+            <img src="imgs/animacao/interno.png" alt="" id="interno">
+            <h1>Oi, sou o Dyego, sou designer,<br>
+            desenvolvedor web e programador</h1>
+            
         </div>
+       
+        <h2 class="titulo">Habilidades</h2>
+        <div id="habilidades">
+            
+        </div>
+
         <div id="sobre">
-            <div class="card">
-                <h5>sobreMim()</h5>
-                <p></p>
-            </div>
-            <div class="card">
-                <p>Front-end developer</p>
-                <p>Web-designer</p>
+            <img src="imgs/Dyego.jpg" alt="Minha foto" id="foto">
+            <div id="info">
+                <h2 class="titulo">Sobre</h2>
+                <p id="descri">
+                    Olá, sou o Dyego, sou estudante do Colégio Pedro II, faço técnico em desenvolvimento de sistemas onde eu aprendi quase tudo sobre desenvolvimento web e programação em C.
+                    <br>Também fiz curso de design na  Zion onde eu consegui todos os meus conhecimentos de design gráfico e web design.
+                </p>
             </div>
         </div>
-        <div id="linguagens">
-            <h5>Linguagens()</h5>
-        </div>
+
+        <h2 class="titulo">Projetos</h2>
         <div id="projetos">
-            <h5>Projetos()</h5>
+            <div class="card">
+                <img src="imgs/Projetos/Unitedex.png" alt="Unitedex" class="projetosIcone">
+                <div class="infos">
+                    <div class="linguagens">
+                        <img src="imgs/logos/html-1.svg" alt="Html" class="iconeHabilidade">
+                        <img src="imgs/logos/html-1.svg" alt="Html" class="iconeHabilidade">
+                        <img src="imgs/logos/html-1.svg" alt="Html" class="iconeHabilidade">
+                    </div>
+                    <p class="descricao">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium deleniti rerum aspernatur suscipit voluptatum fugiat eaque vitae ipsum laudantium ut quam quibusdam libero, esse iste repellendus sed commodi. Reiciendis, cupiditate.
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <h2 id="tituloFooter"></h2>
+        <h2 class="subTitulo">Aproveite de me siga nas<br>redes sociais</h2>
+        <div id="social">
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
     </footer>
+    <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
+    <script src="js/bd.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
