@@ -116,7 +116,7 @@ function mudarTema(id){
         temaFolha.setAttribute("href", "css/white-style.css")
         temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
         interno.setAttribute("src","imgs/animacao/interno.png")
-        externo.setAttribute("src","imgs/animacao/externo.png")
+        externo.setAttribute("src","imgs/animacao/Externo.png")
         temaBtn.innerText="Dark Mode"
     }
 
@@ -125,7 +125,7 @@ function mudarTema(id){
         id=1
         temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
         interno.setAttribute("src","imgs/animacao/internoDark.png")
-        externo.setAttribute("src","imgs/animacao/externoDark.png")
+        externo.setAttribute("src","imgs/animacao/ExternoDark.png")
         temaBtn.innerText="White Mode"
         
     }
