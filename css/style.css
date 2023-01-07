@@ -50,7 +50,6 @@ header a,header a:visited{
     color: var(--corLetra);
 }
 
-
 #nome{
     font-size: 2rem;
     
@@ -86,6 +85,7 @@ header a,header a:visited{
 
 /* Main */
 main{
+    width: 100%;
     padding: 2rem;
 
     display: flex;
@@ -104,13 +104,13 @@ main{
 
 #externo{
     width: 35%;
-    left: 250px;
+    left: 14%;
     animation-name: rodarDireita;
 }
 
 #interno{
     width: 20%;
-    left: 400px;
+    left: 22%;
     animation-name: rodarEsquerda;
 }
 
@@ -130,17 +130,19 @@ h1{
     font-size: 3rem;
     text-align: center;
 }
-
+/* Habilidades */
 .titulo{
     border-bottom: 5px solid var(--corEspecial);
     margin: 25px;
 
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
     color: var(--corEspecial);
 }
 
 #habilidades{
+    min-width: 500px;
     background-color: var(--transparente);
     border-radius: 50px;
     padding: 3rem;
@@ -148,18 +150,28 @@ h1{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px 0px;
+    gap: 30px 0px;
 }
 
 .card{
     width: 33%;
+    min-width: 300px;
     display: flex;
     align-items: center;
+}
+
+.nomeLinguagem{
+    font-size: 90%;
 }
 
 .iconeHabilidade{
     width: 20%;
     margin: 10px;
+    min-width: 50px;
+}
+
+.conhecimento i{
+    font-size: 80%;
 }
 
 .infos{
@@ -175,13 +187,14 @@ h1{
 }
 
 #projetos{
+    min-width: 500px;
     background-color: var(--transparente);
     border-radius: 50px;
     padding: 2rem;
 
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 50px;
 }
 
@@ -191,9 +204,6 @@ h1{
     padding: 10px;
 }
 
-.projetosIcone{
-    width: 40%;
-}
 
 .projetosIcone img{
     width: 300px;
@@ -217,11 +227,14 @@ h1{
 
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 #foto{
     width: 30%;
+    min-width: 200px;
 }
+
 
 #info{
     width: 50%;
@@ -232,7 +245,7 @@ h1{
     align-items: flex-start;
 }
 
-#projetos .linguagens{
+.infoProjeto .linguagens{
     display: flex;
     align-items: center;
 }
@@ -243,7 +256,10 @@ h1{
 
 #descri{
     font-size: 2rem;
+}
 
+.infoProjeto{
+    display: flex;
 }
 
 footer{
@@ -268,6 +284,134 @@ footer{
     color: var(--corEspecial2);
 }
 
+/* Responsivo */
+@media (max-width: 1336px){
+   
+    h1{
+        font-size: 2rem;
+    }
+
+
+    #habilidades,#projetos{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+     .card{
+        width: 20%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #habilidades .infos{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nomeLinguagem{
+        font-size: 60%;
+    }
+
+    #externo{
+        width: 60%;
+        left: 20%;
+    }
+
+    #interno{
+        width: 35%;
+        left: 32%;
+    }
+
+    #foto{
+        width: 40%;
+    }
+
+    #info{
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin-left: 0;
+    }
+
+    #sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #descri{
+        min-width: 400px;
+        font-size: 1.5rem;
+    }
+    
+    #projetos .card{
+        width: 80%;
+        padding-bottom: 5%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .infoProjeto{
+        margin: 3%;
+        align-items: center;
+    }
+    
+    .infoProjeto .linguagens{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .projetosIcone img{
+        width: 65%;
+    }
+}
+
+@media (max-width: 770px){
+    main{
+        padding: 0;
+    }
+
+    #habilidades,#projetos,#sobe{
+        width: 100%;
+        min-width: 0;
+        gap: 10px;
+        padding:  30px 0px;
+    }
+    #info{
+        width: 80%;
+    }
+
+    #sobre{
+        align-items: center;
+    }
+
+    #descri{       
+         min-width: 300px;
+
+        font-size: 1rem;
+    }
+    #projeto .card{
+        padding: 10px 0px;
+        
+    }
+
+    .infoProjeto .descricao{
+        font-size: 30%;
+        margin: 10px 10px;
+    }
+
+    .infoProjeto .linguagens img{
+        display: flex;
+        min-width: 40px;
+    }
+}
+
+
+/* Animação */
 @keyframes rodarDireita{
     0%{
         transform: rotate(0);
