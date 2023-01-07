@@ -24,7 +24,7 @@ const linguagens = [
         cor: "#00599c",
     },
     {
-        icone: "cpp.png",
+        icone: "Cpp.png",
         nome: "C++",
         estrelas: 3,
         cor: "#00599c",
