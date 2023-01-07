@@ -8,7 +8,7 @@ const linguagens = [
     {
         icone: "css.png",
         nome: "CSS",
-        estrelas: 5,
+        estrelas: 4,
         cor: "#0089ca",
     },
     {
@@ -44,7 +44,7 @@ const linguagens = [
     {
         icone:"responsivo.png",
         nome:"Responsividade",
-        estrelas: 3,
+        estrelas: 2,
         cor: "#001F54"
     },
     {

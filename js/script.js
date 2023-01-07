@@ -130,3 +130,7 @@ function mudarTema(id){
         
     }
 }
+
+function abriMenu(){
+    alert("teste")
+}
