@@ -45,23 +45,35 @@ const linguagens = [
         icone:"responsivo.png",
         nome:"Responsividade",
         estrelas: 2,
-        cor: "#001F54"
+        cor: "#04495e"
     },
     {
         icone:"API.png",
         nome:"Integração API",
         estrelas: 1,
         cor: "#FAA916"
-    },                                                                                   
+    }, 
+    {
+        icone:"SQL.png",
+        nome:"SQL",
+        estrelas: "nulo",
+        cor: "#db7533"
+    },
+    {
+        icone:"React.png",
+        nome:"React",
+        estrelas: "nulo",
+        cor: "#4395a8"
+    },                                                                          
 ]
 
 const projetos=[
     {
-        foto:"Unitedex.png",
-        nome:"Unitedex",
-        linguagensUsadas: ["html.svg","css.png","responsivo.png","js.png"],
-        linkProjeto: "https://dyegoanjos.github.io/Site-Clima/",
-        descricao: "Esse projeto é um site onde tem as informações básicas dos Pokemon e itens do jogo Pokemon unite. Esse é um dos maiores projetos que eu já fiz."
+        foto:"Sacolao.png",
+        nome:"Sacolão",
+        linguagensUsadas: ["Cpp.png"],
+        linkProjeto: "https://github.com/DyegoAnjos/sacolao",
+        descricao: "Projeto c++, simulador de sacolão tendo arquivo e struct."
 
     },
     {

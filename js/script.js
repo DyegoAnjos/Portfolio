@@ -108,8 +108,8 @@ const temaFolha = document.getElementById("tema")
 const temaBtn = document.getElementById("temaBtn")
 const externo = document.querySelector("#externo") 
 const interno = document.querySelector("#interno") 
+const favicon = document.querySelector("#favicon")
 
-// console.log(bg)
 function mudarTema(id){
     if(id === 1){
         id=2
@@ -117,6 +117,7 @@ function mudarTema(id){
         temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
         interno.setAttribute("src","imgs/animacao/interno.png")
         externo.setAttribute("src","imgs/animacao/Externo.png")
+        favicon.setAttribute("href","imgs/logos/FavClaro.png")
         temaBtn.innerText="Dark Mode"
     }
 
@@ -126,6 +127,7 @@ function mudarTema(id){
         temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
         interno.setAttribute("src","imgs/animacao/internoDark.png")
         externo.setAttribute("src","imgs/animacao/ExternoDark.png")
+        favicon.setAttribute("href","imgs/logos/FavEscuro.png")
         temaBtn.innerText="White Mode"
         
     }
