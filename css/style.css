@@ -289,9 +289,10 @@ footer{
     text-align: center;
 }
 
-#social{
+#social a{
     font-size: 6rem;
     color: var(--corEspecial2);
+    margin: 30px;
 }
 
 

@@ -85,6 +85,14 @@ const projetos=[
 
     },
     {
+        foto:"Unitedex.png",
+        nome:"Unitedéx",
+        linguagensUsadas: ["html.svg","css.png","responsivo.png","js.png"],
+        linkProjeto: "https://dyegoanjos.github.io/Unitedex/",
+        descricao: "Um site onde mostra as habilidades dos pokémon do jogo pokémon unite."
+
+    },
+    {
         foto:"loginAluno.png",
         nome:"Site notas",
         linguagensUsadas: ["html.svg","css.png","responsivo.png","js.png"],
