@@ -1,7 +1,7 @@
 # Portfólio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/DyegoAnjos/Unitedex?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/DyegoAnjos/Unitedex?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/DyegoAnjos/Portfolio?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/DyegoAnjos/Portfolio?style=for-the-badge)
 
 <img src="/imgs/readme/Capa.png" alt="exemplo imagem">
 
