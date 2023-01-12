@@ -1,8 +1,7 @@
 const habilidades = document.querySelector("#habilidades")
 const projects = document.querySelector("#projetos")
 
-function infos(){
-    // Linguagens
+function Linguagem(){
     for(let i=0;i<linguagens.length;i++){
         var tamanhoEstrelas = linguagens[i].estrelas
         const cardHabilidade = document.createElement("div")
@@ -58,8 +57,9 @@ function infos(){
 
         divInfos[i].style.color = linguagens[i].cor   
     }
+}
 
-    //Projetos
+function Projetos(){
     for(var i=0;i<projetos.length;i++){
         const card=document.createElement("div")
         card.setAttribute("class", "card")
@@ -102,6 +102,12 @@ function infos(){
             stacksDiv[i].appendChild(habilidadesUsadas)
         }
     }
+}
+
+function infos(){
+    Linguagem()
+
+    Projetos()
 }
 
 const temaFolha = document.getElementById("tema")
