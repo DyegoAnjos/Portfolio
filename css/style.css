@@ -5,11 +5,6 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    --corBg: #ededed;
-    --corLetra: #000000;
-    --transparente: hsla(261, 92%, 15%, 0.068); 
-    --corEspecial: #c9751b;
-    --corEspecial2:#ef652a;
 
     font-family: 'Comfortaa';
 }
@@ -104,23 +99,28 @@ main{
     align-items: center;
 }
 
-#externo,#interno{
+svg{
     position: absolute;
     z-index: -1;
 
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
-}
-
-#externo{
     width: 35%;
     left: 14%;
+}
+
+#Externo,#Interno{
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    transform-origin: center;
+}
+
+#Externo{
+    fill: var(--corEspecial2);
+   
     animation-name: rodarDireita;
 }
 
-#interno{
-    width: 20%;
-    left: 22%;
+#Interno{
+    fill:var(--corEspecial);
     animation-name: rodarEsquerda;
 }
 
@@ -331,15 +331,10 @@ footer{
     .nomeLinguagem{
         font-size: 60%;
     }
-
-    #externo{
-        width: 42%;
-        left: 29%;
-    }
-
-    #interno{
-        width: 25%;
-        left: 38%;
+    
+    svg{
+        width: 80%;
+        left: 10%;
     }
 
     #foto{

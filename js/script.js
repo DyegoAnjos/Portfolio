@@ -106,8 +106,8 @@ function infos(){
 
 const temaFolha = document.getElementById("tema")
 const temaBtn = document.getElementById("temaBtn")
-const externo = document.querySelector("#externo") 
-const interno = document.querySelector("#interno") 
+const externo = document.getElementById("Externo")
+const interno = document.getElementById("Interno")
 const favicon = document.querySelector("#favicon")
 
 function mudarTema(id){
@@ -115,8 +115,8 @@ function mudarTema(id){
         id=2
         temaFolha.setAttribute("href", "css/white-style.css")
         temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
-        interno.setAttribute("src","imgs/animacao/interno.png")
-        externo.setAttribute("src","imgs/animacao/Externo.png")
+        interno.style.fill = "var(--corEspecial)"
+        externo.style.fill = "var(--corEspecial2)"
         favicon.setAttribute("href","imgs/logos/FavClaro.png")
         temaBtn.innerText="Dark Mode"
     }
@@ -125,14 +125,10 @@ function mudarTema(id){
         temaFolha.setAttribute("href", "css/dark-style.css")
         id=1
         temaBtn.setAttribute("onclick", "mudarTema("+id+")" )
-        interno.setAttribute("src","imgs/animacao/internoDark.png")
-        externo.setAttribute("src","imgs/animacao/ExternoDark.png")
+        interno.style.fill = "var(--corEspecial2)"
+        externo.style.fill = "var(--corEspecial)"
         favicon.setAttribute("href","imgs/logos/FavEscuro.png")
         temaBtn.innerText="White Mode"
         
     }
-}
-
-function abriMenu(){
-    alert("teste")
 }

@@ -1,66 +1,66 @@
 const linguagens = [
     {
-        icone: "html.svg",
+        icone: "Html.svg",
         nome: "HTML",
         estrelas: 5,
         cor: "#ef652a"
     },
     {
-        icone: "css.png",
+        icone: "Css.svg",
         nome: "CSS",
         estrelas: 4,
         cor: "#0089ca",
     },
     {
-        icone: "js.png",
+        icone: "Js.svg",
         nome: "JavaScript",
         estrelas: 3,
         cor: "#b3a33b",
     },
     {
-        icone: "C.png",
+        icone: "C.svg",
         nome: "C",
         estrelas: 4,
         cor: "#00599c",
     },
     {
-        icone: "Cpp.png",
+        icone: "Cpp.svg",
         nome: "C++",
         estrelas: 3,
         cor: "#00599c",
     },
     {
-        icone: "Cs.png",
+        icone: "Cs.svg",
         nome: "C#",
         estrelas: "nulo",
         cor: "#390091",
     },
     {
-        icone:"design.png",
+        icone:"Design.svg",
         nome:"Web Design",
         estrelas: 2,
         cor: "#830A48"
     },
     {
-        icone:"responsivo.png",
+        icone:"Responsivo.svg",
         nome:"Responsividade",
         estrelas: 2,
         cor: "#04495e"
     },
     {
-        icone:"API.png",
+        icone:"API.svg",
         nome:"Integração API",
         estrelas: 1,
         cor: "#FAA916"
     }, 
     {
-        icone:"SQL.png",
+        icone:"SQL.svg",
         nome:"SQL",
         estrelas: "nulo",
         cor: "#db7533"
     },
     {
-        icone:"React.png",
+        icone:"React.svg",
         nome:"React",
         estrelas: "nulo",
         cor: "#4395a8"
@@ -71,7 +71,7 @@ const projetos=[
     {
         foto:"Sacolao.png",
         nome:"Sacolão",
-        linguagensUsadas: ["Cpp.png"],
+        linguagensUsadas: ["Cpp.svg"],
         linkProjeto: "https://github.com/DyegoAnjos/sacolao",
         descricao: "Projeto c++, simulador de sacolão tendo arquivo e struct."
 
@@ -79,7 +79,7 @@ const projetos=[
     {
         foto:"Site-clima.png",
         nome:"Previsão do tempo",
-        linguagensUsadas: ["html.svg","css.png","responsivo.png","js.png","API.png"],
+        linguagensUsadas: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
         linkProjeto: "https://dyegoanjos.github.io/Site-Clima/",
         descricao: "Esse é o meu primeiro site usando APIs, para esse projeto ele fala o clima, temperatura etc sobre uma região que você colocar."
 
@@ -87,7 +87,7 @@ const projetos=[
     {
         foto:"Unitedex.png",
         nome:"Unitedéx",
-        linguagensUsadas: ["html.svg","css.png","responsivo.png","js.png"],
+        linguagensUsadas: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
         linkProjeto: "https://dyegoanjos.github.io/Unitedex/",
         descricao: "Um site onde mostra as habilidades dos pokémon do jogo pokémon unite."
 
@@ -95,7 +95,7 @@ const projetos=[
     {
         foto:"loginAluno.png",
         nome:"Site notas",
-        linguagensUsadas: ["html.svg","css.png","responsivo.png","js.png"],
+        linguagensUsadas: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
         linkProjeto: "https://dyegoanjos.github.io/Login-aluno/",
         descricao: "Esse projeto é uma simulação de um site onde o aluno coloca o seu login e faz o cálculo da sua nota (não tem login certo para o formulário)."
 
@@ -103,7 +103,7 @@ const projetos=[
     {
         foto:"FormularioDark.png",
         nome:"Formulário Dark",
-        linguagensUsadas: ["html.svg","css.png","js.png"],
+        linguagensUsadas: ["Html.svg","Css.svg","Js.svg"],
         linkProjeto: "https://dyegoanjos.github.io/Formulario-Dark/",
         descricao: "Esse projeto é um formulário neon (não tem login certo para o formulário)."
 
