@@ -1,111 +1,111 @@
-const linguagens = [
+const skillsBd = [
     {
-        icone: "Html.svg",
-        nome: "HTML",
-        estrelas: 5,
-        cor: "#ef652a"
+        icon: "Html.svg",
+        name: "HTML",
+        stars: 5,
+        color: "#ef652a"
     },
     {
-        icone: "Css.svg",
-        nome: "CSS",
-        estrelas: 4,
-        cor: "#0089ca",
+        icon: "Css.svg",
+        name: "CSS",
+        stars: 4,
+        color: "#0089ca",
     },
     {
-        icone: "Js.svg",
-        nome: "JavaScript",
-        estrelas: 3,
-        cor: "#b3a33b",
+        icon: "Js.svg",
+        name: "JavaScript",
+        stars: 3,
+        color: "#efda4f",
     },
     {
-        icone: "C.svg",
-        nome: "C",
-        estrelas: 4,
-        cor: "#00599c",
+        icon: "C.svg",
+        name: "C",
+        stars: 4,
+        color: "#00599c",
     },
     {
-        icone: "Cpp.svg",
-        nome: "C++",
-        estrelas: 3,
-        cor: "#00599c",
+        icon: "Cpp.svg",
+        name: "C++",
+        stars: 3,
+        color: "#00599c",
     },
     {
-        icone: "Cs.svg",
-        nome: "C#",
-        estrelas: "nulo",
-        cor: "#390091",
+        icon: "Cs.svg",
+        name: "C#",
+        stars: "null",
+        color: "#390091",
     },
     {
-        icone:"Design.svg",
-        nome:"Web Design",
-        estrelas: 2,
-        cor: "#830A48"
+        icon:"Design.svg",
+        name:"Web Design",
+        stars: 2,
+        color: "#830A48"
     },
     {
-        icone:"Responsivo.svg",
-        nome:"Responsividade",
-        estrelas: 2,
-        cor: "#04495e"
+        icon:"Responsivo.svg",
+        name:"Responsividade",
+        stars: 2,
+        color: "#001f54"
     },
     {
-        icone:"API.svg",
-        nome:"Integração API",
-        estrelas: 1,
-        cor: "#FAA916"
+        icon:"API.svg",
+        name:"Integração API",
+        stars: 2,
+        color: "#FAA916"
     }, 
     {
-        icone:"SQL.svg",
-        nome:"SQL",
-        estrelas: "nulo",
-        cor: "#db7533"
+        icon:"SQL.svg",
+        name:"SQL",
+        stars: "null",
+        color: "#db7533"
     },
     {
-        icone:"React.svg",
-        nome:"React",
-        estrelas: "nulo",
-        cor: "#4395a8"
+        icon:"React.svg",
+        name:"React",
+        stars: "null",
+        color: "#4395a8"
     },                                                                          
 ]
 
-const projetos=[
+const projectsBd=[
     {
-        foto:"Sacolao.png",
-        nome:"Sacolão",
-        linguagensUsadas: ["Cpp.svg"],
-        linkProjeto: "https://github.com/DyegoAnjos/sacolao",
-        descricao: "Projeto c++, simulador de sacolão tendo arquivo e struct."
+        photo:"Sacolao.png",
+        name:"Sacolão",
+        Skills: ["Cpp.svg"],
+        linkProjects: "https://github.com/DyegoAnjos/sacolao",
+        description: "Projeto c++, simulador de sacolão tendo arquivo e struct."
 
     },
     {
-        foto:"Site-clima.png",
-        nome:"Previsão do tempo",
-        linguagensUsadas: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
-        linkProjeto: "https://dyegoanjos.github.io/Site-Clima/",
-        descricao: "Esse é o meu primeiro site usando APIs, para esse projeto ele fala o clima, temperatura etc sobre uma região que você colocar."
+        photo:"Site-clima.png",
+        name:"Previsão do tempo",
+        Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
+        linkProjects: "https://dyegoanjos.github.io/Site-Clima/",
+        description: "Esse é o meu primeiro site usando APIs, para esse projeto ele fala o clima, temperatura etc sobre uma região que você colocar."
 
     },
     {
-        foto:"Unitedex.png",
-        nome:"Unitedéx",
-        linguagensUsadas: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
-        linkProjeto: "https://dyegoanjos.github.io/Unitedex/",
-        descricao: "Um site onde mostra as habilidades dos pokémon do jogo pokémon unite."
+        photo:"Unitedex.png",
+        name:"Unitedéx",
+        Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
+        linkProjects: "https://dyegoanjos.github.io/Unitedex/",
+        description: "Um site onde mostra as habilidades dos pokémon do jogo pokémon unite."
 
     },
     {
-        foto:"loginAluno.png",
-        nome:"Site notas",
-        linguagensUsadas: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
-        linkProjeto: "https://dyegoanjos.github.io/Login-aluno/",
-        descricao: "Esse projeto é uma simulação de um site onde o aluno coloca o seu login e faz o cálculo da sua nota (não tem login certo para o formulário)."
+        photo:"loginAluno.png",
+        name:"Site notas",
+        Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
+        linkProjects: "https://dyegoanjos.github.io/Login-aluno/",
+        description: "Esse projeto é uma simulação de um site onde o aluno coloca o seu login e faz o cálculo da sua nota (não tem login certo para o formulário)."
 
     },
     {
-        foto:"FormularioDark.png",
-        nome:"Formulário Dark",
-        linguagensUsadas: ["Html.svg","Css.svg","Js.svg"],
-        linkProjeto: "https://dyegoanjos.github.io/Formulario-Dark/",
-        descricao: "Esse projeto é um formulário neon (não tem login certo para o formulário)."
+        photo:"FormularioDark.png",
+        name:"Formulário Dark",
+        Skills: ["Html.svg","Css.svg","Js.svg"],
+        linkProjects: "https://dyegoanjos.github.io/Formulario-Dark/",
+        description: "Esse projeto é um formulário neon (não tem login certo para o formulário)."
 
     },
 ]

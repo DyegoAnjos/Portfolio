@@ -11,27 +11,28 @@
     <title>Dyego Anjos</title>
     
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dark-style.css" id="tema">
+    <link rel="stylesheet" href="css/dark-style.css" id="mode">
     <link rel="shortcut icon" href="imgs/logos/FavEscuro.png" type="image/x-icon" id="favicon">
 </head>
 <body onload="infos()">
+    <div id="transition"></div>
     <header>
-        <p id="nome">Dyego Anjos</p>
-        <nav id="partes">
-            <a href="#habilidades" target="_self">habilidades</a>
-            <a href="#sobre" target="_self">sobre</a>
-            <a href="#projetos" target="_self">projetos</a>
+        <p id="name">Dyego Anjos</p>
+        <nav>
+            <a href="#skills" target="_self">habilidades</a>
+            <a href="#about" target="_self">sobre</a>
+            <a href="#projects" target="_self">projetos</a>
         </nav>
-        <div class="botoes">
-            <p id="temaBtn" onclick="mudarTema(2)">White Mode</p>
-            <a href="mailto:dyegocordeiro2007@gmail.com" id="email">Email</a>
+        <div class="buttons">
+            <p id="modeBtn" onclick="changeMode(1)">White Mode</p>
+            <a id="emailBtn" href="mailto:dyegocordeiro2007@gmail.com" >Email</a>
         </div>
     </header>
     <main>
-        <div id="inicial" >
+        <div id="firstPart">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
-                <g id="Escuro">
-                    <g id="Interno">
+                <g id="dark">
+                    <g id="internalSvg">
                         <path class="cls-1" d="M407,518.68c-30.59,5.84-61.42-13.68-69.72-44.26-1.24-4.6-1.83-9.38-2.73-14.08v-5c.79-4.2,1.36-8.45,2.4-12.58,7.14-28.39,34.58-48.15,63.64-45.93,30,2.28,53.73,25.11,56.77,54.62C460.67,484.11,439.4,512.5,407,518.68Z"/>
                         <path class="cls-1" d="M407,682.69c-33.91,5.25-64.18-15.67-70.91-49-.58-2.89-1-5.8-1.55-8.7v-5c2.54-8.84,3.9-18.27,7.86-26.43,11.49-23.68,39.05-36.8,64.59-31.91,27.52,5.29,47.61,26.77,50.34,53.84C460.57,648.18,438.37,677.82,407,682.69Z"/>
                         <path class="cls-1" d="M600.64,383.48c-4.08,29.75-30,52.12-60.48,52.14-33,0-59.54-24.71-61.64-57.48-2.06-32.23,21.14-60.08,53.75-64.56a15.45,15.45,0,0,0,2.74-.91h9c4.51,1,9.1,1.73,13.51,3C586.74,324.33,604.83,352.84,600.64,383.48Z"/>
@@ -39,7 +40,7 @@
                         <path class="cls-1" d="M744.67,622.06c.07,34-27.53,61.7-61.34,61.64a61.55,61.55,0,0,1-61.39-62.14c.12-33.65,27.63-60.72,61.65-60.66A61,61,0,0,1,744.67,622.06Z"/>
                         <path class="cls-1" d="M601.07,705.91a61.29,61.29,0,1,1-122.57-.24c0-34.08,27.27-61,61.72-60.95C574.22,644.75,601.06,671.74,601.07,705.91Z"/>
                     </g>
-                    <g id="Externo">
+                    <g id="externalSvg">
                         <path class="cls-2" d="M601.89,176.2A61.58,61.58,0,0,1,554.12,234c-40,9-76.73-23-74.06-64.48a60.53,60.53,0,0,1,51.21-55.65,23.38,23.38,0,0,0,3.74-1.16h12c2.69.7,5.37,1.49,8.08,2.08C580.78,120.33,602.89,145.25,601.89,176.2Z"/>
                         <path class="cls-2" d="M260,540.33c0,33.44-27.42,60.49-61.22,60.49a61.12,61.12,0,0,1,.1-122.24A61.24,61.24,0,0,1,260,540.33Z"/>
                         <path class="cls-2" d="M942.22,540.28a61.12,61.12,0,1,1-61.07-61.7C915.18,478.57,942.25,505.92,942.22,540.28Z"/>
@@ -53,18 +54,15 @@
             </svg>
             <h1>Oi, sou o Dyego, sou designer,<br>
             desenvolvedor web e programador</h1>
-            
         </div>
        
-        <h2 class="titulo">Habilidades</h2>
-        <div id="habilidades">
-            
-        </div>
+        <h2 class="title">Habilidades</h2>
+        <div id="skills"></div>
 
-        <div id="sobre">
-            <img src="imgs/Dyego.jpg" alt="Minha foto" id="foto">
+        <div id="about">
+            <img src="imgs/Dyego.jpg" alt="Minha foto" id="photo">
             <div id="info">
-                <h2 class="titulo">Sobre</h2>
+                <h2 class="title">Sobre</h2>
                 <p id="descri">
                     Olá, sou o Dyego, sou estudante do Colégio Pedro II, faço técnico em desenvolvimento de sistemas onde eu aprendi quase tudo sobre desenvolvimento web e programação em C.
                     <br>Também fiz curso de design na  Zion onde eu consegui todos os meus conhecimentos de design gráfico e web design.
@@ -72,20 +70,23 @@
             </div>
         </div>
 
-        <h2 class="titulo">Projetos</h2>
-        <div id="projetos">
+        <h2 class="title">Projetos</h2>
+        <div id="projects">
             
         </div>
     </main>
     <footer>
-        <h2 class="subTitulo">Aproveite de me siga nas<br>redes sociais</h2>
+        <h2 class="subTitle">Aproveite de me siga nas<br>redes sociais</h2>
         <div id="social">
             <a href="https://www.linkedin.com/in/dyego-cordeiro-8491891a3/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/DyegoAnjos" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+    
     <script src="https://kit.fontawesome.com/2d311d7657.js" crossorigin="anonymous"></script>
     <script src="js/bd.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/createSkills.js"></script>
+    <script src="js/createProjects.js"></script>
 </body>
 </html>

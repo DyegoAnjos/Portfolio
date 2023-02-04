@@ -11,23 +11,18 @@
 
 
 body{
-    background-color: var(--corBg);
-    color: var(--corLetra);
+    background-color: var(--colorBg);
+    color: var(--colorLetter);
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-/* Cabeçalho */
+
 header{
-    width: 100%;
     height: 100px;
 
-    font-size: 1.3rem;
-    color: var(--corLetra);
+    color: var(--colorLetter);
     font-weight: 700;
-
-    padding: 2rem;
 
     display: flex;
     align-items: center;
@@ -39,93 +34,69 @@ header{
 header:hover{
     height: 150px;
     transition: .5s;
-    background-color: var(--transparente);
+    background-color: var(--transparent);
 }
 
 header a,header a:visited{
-    color: var(--corLetra);
+    color: var(--colorLetter);
 }
 
-#nome{
-    font-size: 2rem;
-    
+#name{
+    font-size: 2rem; 
 }
 
-#partes{
+nav{
     width: 20%;
     display: flex;
     justify-content: space-around;
-    gap: 10px   ;
+    gap: 10px;
 }
 
-
-
-#partes a:hover{
-    color: var(--corEspecial);
+nav a:hover{
+    color: var(--especialColor);
     transition: .3s;
 }
 
-.botoes{
+.buttons{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-#email,#temaBtn{
+#emailBtn,#modeBtn{
     font-weight: 700;
     text-align: center;
     
-    border: 3px solid var(--corLetra);
+    border: 3px solid var(--colorLetter);
     border-radius: 10px;
     padding: .5rem;
     transition: .5s;
 }
 
-#email:hover, #temaBtn:hover {
-    background-color: var(--corLetra);
+#emailBtn:hover, #modeBtn:hover{
+    background-color: var(--colorLetter);
     border-radius: 50px;
-    color: var(--corBg);
+    color: var(--colorBg);
     transition: .5s;
 }
 
-/* Main */
 main{
-    width: 100%;
     padding: 2rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 svg{
-    position: absolute;
-    z-index: -1;
-
     width: 35%;
+
+    z-index: -1;
     left: 14%;
+    position: absolute;
 }
 
-#Externo,#Interno{
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
-    transform-origin: center;
-}
-
-#Externo{
-    fill: var(--corEspecial2);
-   
-    animation-name: rodarDireita;
-}
-
-#Interno{
-    fill:var(--corEspecial);
-    animation-name: rodarEsquerda;
-}
-
-/* Principal */
-#inicial{
+#firstPart{
     height: 600px;
 
     display: flex;
@@ -133,54 +104,75 @@ svg{
     justify-content: center;
 }
 
+#externalSvg,#internalSvg{
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    transform-origin: center;
+}
+
+#externalSvg{
+    fill: var(--especialColor2);
+   
+    animation-name: rotateRight;
+}
+
+#internalSvg{
+    fill:var(--especialColor);
+    animation-name: rotateLeft;
+}
+
 h1{
-    border-bottom: 5px solid var(--corLetra);
-    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--colorLetter);
 
     font-size: 3rem;
     text-align: center;
 }
-/* Habilidades */
-.titulo{
-    border-bottom: 5px solid var(--corEspecial);
+
+.title{
+    border-bottom: 5px solid var(--especialColor);
     margin: 25px;
 
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--corEspecial);
+    color: var(--especialColor);
 }
 
-#habilidades{
+#projects,#skills{
     min-width: 500px;
-    background-color: var(--transparente);
+    background-color: var(--transparent);
     border-radius: 50px;
-    padding: 3rem;
-    
+    padding: 2rem;
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#skills{   
     gap: 30px 0px;
 }
 
 .card{
     width: 33%;
     min-width: 300px;
+
     display: flex;
     align-items: center;
 }
 
-.nomeLinguagem{
-    font-size: 90%;
+.nameSkill{
+    font-size: 70%;
 }
 
-.iconeHabilidade{
+.iconSkill{
     width: 20%;
     margin: 10px;
     min-width: 50px;
 }
 
-.conhecimento i{
+.levelSkill i{
     font-size: 80%;
 }
 
@@ -189,49 +181,55 @@ h1{
 
     font-size: 3rem;
     font-weight: 700;
-    color: var(--corEspecial2);
+    color: var(--especialColor2);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
-#projetos{
-    min-width: 500px;
-    background-color: var(--transparente);
-    border-radius: 50px;
-    padding: 2rem;
+#projects{
+    height: 800px;
+    gap: 5px;
 
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
-#projetos .card{
-    width: 45%;
-    border: 5px solid var(--corEspecial);
+#projects .card{
+    min-height: 350px;
+    border: 5px solid var(--especialColor);
     padding: 10px;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
-
-.projetosIcone img{
+.projectsIcon img{
     width: 300px;
 }
 
-.iconeHabilidade{
-    width: 20%;
+#projects .skills{
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
-.descricao{
+#projects .skills .iconSkill{
+    width: 10%;
+}
+
+.projectsDesc{
     font-size: 1rem;
 }
 
-#projetos .infos{
-    margin-left: 10px;
+.infoProjects{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-#sobre{
+#about{
     margin: 40px;
     padding: 20px;
 
@@ -240,7 +238,7 @@ h1{
     align-items: flex-start;
 }
 
-#foto{
+#photo{
     width: 30%;
     min-width: 200px;
 }
@@ -255,21 +253,8 @@ h1{
     align-items: flex-start;
 }
 
-.infoProjeto .linguagens{
-    display: flex;
-    align-items: center;
-}
-
-.linguagens .iconeHabilidade{
-    width: 10%;
-}
-
 #descri{
     font-size: 2rem;
-}
-
-.infoProjeto{
-    display: flex;
 }
 
 footer{
@@ -284,51 +269,64 @@ footer{
     gap: 30px;
 }
 
-.subTitulo{
+.subTitle{
     font-size: 3rem;
     text-align: center;
 }
 
 #social a{
     font-size: 6rem;
-    color: var(--corEspecial2);
+    color: var(--especialColor2);
     margin: 30px;
 }
 
+#transition{
+    width: 100vw;
+    height: 300vh;
+    visibility: hidden;
+    background-color: var(--especialColor2);
+    position: fixed;
+    
+}
 
-/* Responsivo */
+.transition{
+    animation-name: transitionAnimate;
+    animation-duration: 1s;
+}
+
+
 @media (max-width: 1336px){
     
     h1{
         font-size: 2rem;
     }
 
-    #partes{
+    nav{
         flex-direction: column;
         align-items: center;
     }
 
-    #habilidades,#projetos{
+    #projects,#skills{
         width: 80%;
         align-items: center;
         justify-content: center;
         gap: 50px;
     }
 
-     .card{
+    .card{
         width: 20%;
         flex-direction: column;
         text-align: center;
     }
 
-    #habilidades .infos{
+    #skills .infos{
         align-items: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .nomeLinguagem{
+    .nameSkill{
         font-size: 60%;
     }
     
@@ -337,7 +335,7 @@ footer{
         left: 10%;
     }
 
-    #foto{
+    #photo{
         width: 40%;
     }
 
@@ -348,7 +346,7 @@ footer{
         margin-left: 0;
     }
 
-    #sobre{
+    #about{
         flex-direction: column;
         align-items: center;
     }
@@ -358,25 +356,25 @@ footer{
         font-size: 1.5rem;
     }
     
-    #projetos .card{
+    #projects .card{
         width: 80%;
         padding-bottom: 5%;
         align-items: center;
         gap: 20px;
     }
 
-    .infoProjeto{
+    .infoProjects{
         margin: 3%;
         align-items: center;
     }
     
-    .infoProjeto .linguagens{
+    .infoProjects .skills{
         width: 50%;
         display: flex;
         justify-content: center;
     }
 
-    .projetosIcone img{
+    .projectsIcon img{
         width: 65%;
     }
 }
@@ -385,18 +383,21 @@ footer{
     header{
         gap: 60px;
     }
-    #nome{
+
+    #name{
         font-size: 90%;
         text-align: center;
     }
+
     .logo{
         font-size: 50%;
     }
-    #partes{
+
+    nav{
         font-size: 60%;
     }
 
-    .botoes{
+    .buttons{
         font-size: 70%;
         flex-direction: column;
         gap: 5px;
@@ -406,17 +407,18 @@ footer{
         padding: 0;
     }
 
-    #habilidades,#projetos,#sobe{
+    #skills,#projects,#about{
         width: 100%;
         min-width: 0;
         gap: 10px;
         padding:  30px 0px;
     }
+
     #info{
         width: 80%;
     }
 
-    #sobre{
+    #about{
         align-items: center;
     }
 
@@ -425,36 +427,38 @@ footer{
 
         font-size: 1rem;
     }
-    #projeto .card{
+    #projects .card{
         padding: 10px 0px;
         
     }
 
-    .infoProjeto .descricao{
+    .infoProjects .projectsDesc{
         font-size: 30%;
         margin: 10px 10px;
     }
 
-    .infoProjeto .linguagens img{
+    .infoProjects .skills img{
         display: flex;
         min-width: 40px;
     }
 
-    .subTitulo{
+    .subTitle{
         font-size: 1rem;
     }
 
     #social{
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        font-size: 4rem;
+        gap: 10px;
+        font-size: 3rem;
+    }
+
+    footer{
+        height: auto;
     }
 }
 
-
-/* Animação */
-@keyframes rodarDireita{
+@keyframes rotateRight{
     0%{
         transform: rotate(0);
     }
@@ -464,12 +468,22 @@ footer{
     }
 }
 
-@keyframes rodarEsquerda{
+@keyframes rotateLeft{
     0%{
         transform: rotate(360deg);
     }
 
     100%{
         transform: rotate(0);
+    }
+}
+
+@keyframes transitionAnimate{
+    0%{
+        opacity: 100%;        
+    }
+
+    100%{
+        opacity: 30%;        
     }
 }

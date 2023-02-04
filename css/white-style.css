@@ -1,7 +1,7 @@
 *{
-    --corBg: #ededed;
-    --corLetra: #000000;
-    --transparente: hsla(261, 92%, 15%, 0.068); 
-    --corEspecial: #ffd60a;
-    --corEspecial2:#ef652a;
+    --colorBg: #ededed;
+    --colorLetter: #000000;
+    --transparent: hsla(261, 92%, 15%, 0.068); 
+    --especialColor: #ffd60a;
+    --especialColor2:#ef652a;
 }
