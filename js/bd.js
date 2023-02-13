@@ -50,7 +50,7 @@ const skillsBd = [
     {
         icon:"API.svg",
         name:"Integração API",
-        stars: 2,
+        stars: 3,
         color: "#FAA916"
     }, 
     {
