@@ -9,7 +9,6 @@
     font-family: 'Comfortaa';
 }
 
-
 body{
     background-color: var(--colorBg);
     color: var(--colorLetter);
@@ -17,6 +16,15 @@ body{
     flex-direction: column;
 }
 
+::-webkit-scrollbar{
+    background-color: var(--especialColor2);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--especialColor);
+    border-radius: 10px;
+}
 
 header{
     height: 100px;
@@ -190,9 +198,19 @@ h1{
 #projects{
     height: 800px;
     gap: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     overflow: hidden;
     overflow-y: scroll;
+}
+
+#projects::-webkit-scrollbar{
+    border-radius: 0px 50px 50px 0px;
+}
+
+#projects::-webkit-scrollbar-thumb{
+    border-radius: 0px 50px 50px 0px;
 }
 
 #projects .card{

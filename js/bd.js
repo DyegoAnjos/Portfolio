@@ -73,7 +73,15 @@ const projectsBd=[
         name:"Sacolão",
         Skills: ["Cpp.svg"],
         linkProjects: "https://github.com/DyegoAnjos/sacolao",
-        description: "Projeto c++, simulador de sacolão tendo arquivo e struct."
+        description: "Um programa em C++ que simula um sacolão podendo cadastra alimentos excluir eles, esse projeto usa struct e arquivos de textos."
+
+    },
+    {
+        photo:"Pokedex.png",
+        name:"Pokedex",
+        Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
+        linkProjects: "https://dyegoanjos.github.io/Pokedex/",
+        description: "Um dos maiores projetos usando Apis que eu já fiz, esse site é uma simples pokedéx que da informações do pokemon que você pesquisar."
 
     },
     {
@@ -81,7 +89,7 @@ const projectsBd=[
         name:"Previsão do tempo",
         Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
         linkProjects: "https://dyegoanjos.github.io/Site-Clima/",
-        description: "Esse é o meu primeiro site usando APIs, para esse projeto ele fala o clima, temperatura etc sobre uma região que você colocar."
+        description: "Usando pela primeira vez API Esse site fala as informações climáticas do lugar que você colocar."
 
     },
     {
@@ -89,7 +97,7 @@ const projectsBd=[
         name:"Unitedéx",
         Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
         linkProjects: "https://dyegoanjos.github.io/Unitedex/",
-        description: "Um site onde mostra as habilidades dos pokémon do jogo pokémon unite."
+        description: "Um dos sites mais complexos já feitos, esse site é feito para mostra as informações dos pokemon do jogo pokemon unite"
 
     },
     {
@@ -100,12 +108,12 @@ const projectsBd=[
         description: "Esse projeto é uma simulação de um site onde o aluno coloca o seu login e faz o cálculo da sua nota (não tem login certo para o formulário)."
 
     },
-    {
-        photo:"FormularioDark.png",
-        name:"Formulário Dark",
-        Skills: ["Html.svg","Css.svg","Js.svg"],
-        linkProjects: "https://dyegoanjos.github.io/Formulario-Dark/",
-        description: "Esse projeto é um formulário neon (não tem login certo para o formulário)."
+    // {
+    //     photo:"FormularioDark.png",
+    //     name:"Formulário Dark",
+    //     Skills: ["Html.svg","Css.svg","Js.svg"],
+    //     linkProjects: "https://dyegoanjos.github.io/Formulario-Dark/",
+    //     description: "Esse projeto é um formulário neon (não tem login certo para o formulário)."
 
-    },
+    // },
 ]
