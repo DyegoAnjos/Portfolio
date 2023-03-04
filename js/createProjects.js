@@ -7,35 +7,22 @@ function createProjects(){
         projects.appendChild(card)
         const cardDiv=document.querySelectorAll("#projects .card")
 
-        const linkProject = document.createElement("a")
-        linkProject.setAttribute("href", projectsBd[i].linkProjects)
-        linkProject.setAttribute("target", "_blank")
-        linkProject.classList.add("projectsIcon")
-        cardDiv[i].appendChild(linkProject)
-        const linkDiv = document.querySelectorAll(".projectsIcon")
-
-
         const projectsImg=document.createElement("img")
         projectsImg.setAttribute("src", "imgs/Projetos/"+projectsBd[i].photo)
         projectsImg.setAttribute("alt", projectsBd[i].name)
-        linkDiv[i].appendChild(projectsImg)
+        projectsImg.classList.add("projectThumb")
+        cardDiv[i].appendChild(projectsImg)
 
-        const infosProjects = document.createElement("div")
-        infosProjects.classList.add("infos")
-        infosProjects.classList.add("infoProjects")
-        cardDiv[i].appendChild(infosProjects)
-        const infosProjectsDiv = document.querySelectorAll(".infoProjects")
-
-        const stacks = document.createElement("div")
-        stacks.classList.add("skills")
-        infosProjectsDiv[i].appendChild(stacks)
-        const stacksDiv=document.querySelectorAll(".skills")
-        
         const description=document.createElement("p")
         description.classList.add("projectsDesc")
         description.innerText=projectsBd[i].description
-        infosProjectsDiv[i].appendChild(description)
+        cardDiv[i].appendChild(description)
 
+        const stacks = document.createElement("div")
+        stacks.classList.add("skills")
+        cardDiv[i].appendChild(stacks)
+        const stacksDiv=document.querySelectorAll(".skills")
+        
         for(let j=0;j<projectsBd[i].Skills.length;j++){
             const habilidadesUsadas = document.createElement("img")
             habilidadesUsadas.setAttribute("src","imgs/logos/"+projectsBd[i].Skills[j])
@@ -43,5 +30,49 @@ function createProjects(){
             habilidadesUsadas.classList.add("iconSkill")
             stacksDiv[i].appendChild(habilidadesUsadas)
         }
+
+        
+        const projectsLinksGit=document.createElement("div")
+        projectsLinksGit.classList.add("projectsLinks")
+        cardDiv[i].appendChild(projectsLinksGit) 
+    
+        const projectLinksDiv= document.querySelectorAll(".projectsLinks")
+    
+        const gitLink = document.createElement("a")
+        gitLink.classList.add("projectLink")
+        gitLink.classList.add("projectLinkGit")
+        gitLink.setAttribute("href", projectsBd[i].linkGit)
+        gitLink.setAttribute("target", "_blank")
+        projectLinksDiv[i].appendChild(gitLink)
+
+        const projectLinkItemGit = document.querySelectorAll(".projectLinkGit")
+
+        const gitIcon = document.createElement("i")
+        gitIcon.setAttribute("class", "fa-brands fa-github linkIcon")
+        projectLinkItemGit[i].appendChild(gitIcon)
+
+        const linkNameGit = document.createElement("p")
+        linkNameGit.classList.add("linkName")
+        linkNameGit.innerText="Repositório do Github"
+        projectLinkItemGit[i].appendChild(linkNameGit) 
+    
+
+        const repositoriesLink = document.createElement("a")
+        repositoriesLink.classList.add("projectLink")
+        repositoriesLink.classList.add("projectLinkRepositories")
+        repositoriesLink.setAttribute("href", projectsBd[i].linkRepositories)
+        repositoriesLink.setAttribute("target", "_blank")
+        projectLinksDiv[i].appendChild(repositoriesLink)
+
+        const projectLinkItemRepositories = document.querySelectorAll(".projectLinkRepositories")
+
+        const repositoriesIcon = document.createElement("i")
+        repositoriesIcon.setAttribute("class", "fa-sharp fa-solid fa-window-maximize linkIcon")
+        projectLinkItemRepositories[i].appendChild(repositoriesIcon)
+
+        const linkNameRepositories = document.createElement("p")
+        linkNameRepositories.classList.add("linkName")
+        linkNameRepositories.innerText="Projeto Hospedado"
+        projectLinkItemRepositories[i].appendChild(linkNameRepositories)
     }
 }

@@ -68,19 +68,20 @@ const skillsBd = [
 ]
 
 const projectsBd=[
-    {
-        photo:"Sacolao.png",
-        name:"Sacolão",
-        Skills: ["Cpp.svg"],
-        linkProjects: "https://github.com/DyegoAnjos/sacolao",
-        description: "Um programa em C++ que simula um sacolão podendo cadastra alimentos excluir eles, esse projeto usa struct e arquivos de textos."
+    // {
+    //     photo:"Sacolao.png",
+    //     name:"Sacolão",
+    //     Skills: ["Cpp.svg"],
+    //     linkProjects: "https://github.com/DyegoAnjos/sacolao",
+    //     description: "Um programa em C++ que simula um sacolão podendo cadastra alimentos excluir eles, esse projeto usa struct e arquivos de textos."
 
-    },
+    // },
     {
         photo:"Pokedex.png",
         name:"Pokedex",
         Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
-        linkProjects: "https://dyegoanjos.github.io/Pokedex/",
+        linkGit: "https://github.com/DyegoAnjos/Pokedex",
+        linkRepositories: "https://dyegoanjos.github.io/Pokedex/",
         description: "Um dos maiores projetos usando Apis que eu já fiz, esse site é uma simples pokedéx que da informações do pokemon que você pesquisar."
 
     },
@@ -88,7 +89,8 @@ const projectsBd=[
         photo:"Site-clima.png",
         name:"Previsão do tempo",
         Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg","API.svg"],
-        linkProjects: "https://dyegoanjos.github.io/Site-Clima/",
+        linkGit: "https://github.com/DyegoAnjos/Site-Clima",
+        linkRepositories: "https://dyegoanjos.github.io/Site-Clima/",
         description: "Usando pela primeira vez API Esse site fala as informações climáticas do lugar que você colocar."
 
     },
@@ -96,7 +98,8 @@ const projectsBd=[
         photo:"Unitedex.png",
         name:"Unitedéx",
         Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
-        linkProjects: "https://dyegoanjos.github.io/Unitedex/",
+        linkGit: "https://github.com/DyegoAnjos/Unitedex",
+        linkRepositories: "https://dyegoanjos.github.io/Unitedex/",
         description: "Um dos sites mais complexos já feitos, esse site é feito para mostra as informações dos pokemon do jogo pokemon unite"
 
     },
@@ -104,7 +107,8 @@ const projectsBd=[
         photo:"loginAluno.png",
         name:"Site notas",
         Skills: ["Html.svg","Css.svg","Responsivo.svg","Js.svg"],
-        linkProjects: "https://dyegoanjos.github.io/Login-aluno/",
+        linkGit: "https://github.com/DyegoAnjos/loginAluno",
+        linkRepositories: "https://dyegoanjos.github.io/loginAluno/",
         description: "Esse projeto é uma simulação de um site onde o aluno coloca o seu login e faz o cálculo da sua nota (não tem login certo para o formulário)."
 
     },

@@ -9,6 +9,10 @@
     font-family: 'Comfortaa';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--colorBg);
     color: var(--colorLetter);
@@ -154,7 +158,8 @@ h1{
     padding: 2rem;
 
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -197,12 +202,14 @@ h1{
 
 #projects{
     height: 800px;
-    gap: 5px;
+    width: 90%;
+    gap: 2rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
     overflow: hidden;
     overflow-y: scroll;
+
 }
 
 #projects::-webkit-scrollbar{
@@ -214,37 +221,93 @@ h1{
 }
 
 #projects .card{
-    min-height: 350px;
+    width: 40%;
+    
+
     border: 5px solid var(--especialColor);
     padding: 10px;
 
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: "Thumb Desc" "Skills Links";
+
     align-items: center;
-    gap: 2rem;
+    justify-items: center;
+
 }
 
-.projectsIcon img{
+.projectThumb{
     width: 300px;
+    border: 5px solid var(--especialColor);
+    pointer-events: none;
+
+    grid-area: Thumb;
 }
 
 #projects .skills{
-    width: 90%;
+    width: 300px;
+
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: Skills;
 }
 
 #projects .skills .iconSkill{
-    width: 10%;
+    width: 20%;
+
+    pointer-events: none;
 }
 
 .projectsDesc{
+    width: 100%;
+    max-height: 170px;
+
+    border: 5px solid var(--especialColor);
+    padding: 1rem;
+    color: var(--especialColor2);
+
     font-size: 1rem;
+
+    grid-area: Desc;
 }
 
-.infoProjects{
+.projectsLinks{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+   grid-area: Links;
+}
+
+.projectLink{
+    height: 70px;
+    max-width: 600px;
+    background-color: var(--especialColor);
+    color: var(--especialColor2);
+    padding: 2rem;
+    border-radius: 50px;
+
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 2rem;
+
+    font-weight: 900;
+}
+
+.linkIcon{
+    
+    font-size: 3rem;
+}
+
+.linkName{
+    font-size: 1rem;
+    text-align: center;
 }
 
 #about{
@@ -426,10 +489,11 @@ footer{
     }
 
     #skills,#projects,#about{
-        width: 100%;
+        width: 90%;
         min-width: 0;
         gap: 10px;
         padding:  30px 0px;
+        border-radius: 0px;
     }
 
     #info{
@@ -445,19 +509,19 @@ footer{
 
         font-size: 1rem;
     }
+
     #projects .card{
-        padding: 10px 0px;
-        
-    }
-
-    .infoProjects .projectsDesc{
-        font-size: 30%;
-        margin: 10px 10px;
-    }
-
-    .infoProjects .skills img{
         display: flex;
-        min-width: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectThumb{
+        width: 250px;
+    }
+
+    #projects .skills{
+        justify-content: center;
     }
 
     .subTitle{
