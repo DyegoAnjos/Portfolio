@@ -13,13 +13,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: var(--colorBg);
-    color: var(--colorLetter);
-    display: flex;
-    flex-direction: column;
-}
-
 ::-webkit-scrollbar{
     background-color: var(--especialColor2);
     width: 10px;
@@ -30,10 +23,17 @@ body{
     border-radius: 10px;
 }
 
+body{
+    background-color: var(--colorBg);
+    color: var(--colorLetter);
+    
+    display: flex;
+    flex-direction: column;
+}
+
 header{
     height: 100px;
 
-    color: var(--colorLetter);
     font-weight: 700;
 
     display: flex;
@@ -49,7 +49,7 @@ header:hover{
     background-color: var(--transparent);
 }
 
-header a,header a:visited{
+header a:visited{
     color: var(--colorLetter);
 }
 
@@ -59,6 +59,7 @@ header a,header a:visited{
 
 nav{
     width: 20%;
+
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -66,6 +67,7 @@ nav{
 
 nav a:hover{
     color: var(--especialColor);
+
     transition: .3s;
 }
 
@@ -81,14 +83,19 @@ nav a:hover{
     
     border: 3px solid var(--colorLetter);
     border-radius: 10px;
+
     padding: .5rem;
+
     transition: .5s;
 }
 
 #emailBtn:hover, #modeBtn:hover{
     background-color: var(--colorLetter);
+
     border-radius: 50px;
+
     color: var(--colorBg);
+
     transition: .5s;
 }
 
@@ -103,9 +110,9 @@ main{
 svg{
     width: 35%;
 
-    z-index: -1;
-    left: 14%;
     position: absolute;
+    left: 14%;  
+    z-index: -1;
 }
 
 #firstPart{
@@ -116,13 +123,6 @@ svg{
     justify-content: center;
 }
 
-#externalSvg,#internalSvg{
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 20s;
-    transform-origin: center;
-}
-
 #externalSvg{
     fill: var(--especialColor2);
    
@@ -131,7 +131,15 @@ svg{
 
 #internalSvg{
     fill:var(--especialColor);
+    
     animation-name: rotateLeft;
+}
+
+#externalSvg,#internalSvg{
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 20s;
+    transform-origin: center;
 }
 
 h1{
@@ -145,15 +153,17 @@ h1{
     border-bottom: 5px solid var(--especialColor);
     margin: 25px;
 
+    color: var(--especialColor);
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
-    color: var(--especialColor);
 }
 
 #projects,#skills{
     min-width: 500px;
+
     background-color: var(--transparent);
+    
     border-radius: 50px;
     padding: 2rem;
 
@@ -181,8 +191,9 @@ h1{
 
 .iconSkill{
     width: 20%;
-    margin: 10px;
     min-width: 50px;
+
+    margin: 10px;
 }
 
 .levelSkill i{
@@ -192,9 +203,9 @@ h1{
 .infos{
     height: 100px;
 
+    color: var(--especialColor2);
     font-size: 3rem;
     font-weight: 700;
-    color: var(--especialColor2);
 
     display: flex;
     flex-direction: column;
@@ -203,26 +214,21 @@ h1{
 #projects{
     height: 800px;
     width: 90%;
+
+    border-radius: 20px 0px 0px 20px;
     gap: 2rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 
     overflow: hidden;
     overflow-y: scroll;
 
 }
 
-#projects::-webkit-scrollbar{
-    border-radius: 0px 50px 50px 0px;
-}
-
-#projects::-webkit-scrollbar-thumb{
+#projects::-webkit-scrollbar, #projects::-webkit-scrollbar-thumb{
     border-radius: 0px 50px 50px 0px;
 }
 
 #projects .card{
     width: 40%;
-    
 
     border: 5px solid var(--especialColor);
     padding: 10px;
@@ -230,18 +236,22 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
     grid-template-areas: "Thumb Desc" "Skills Links";
 
+    gap: 10px;
     align-items: center;
     justify-items: center;
 
 }
 
+.projectThumb, #projects .skills .iconSkill{
+    pointer-events: none;
+}
+
 .projectThumb{
     width: 300px;
+
     border: 5px solid var(--especialColor);
-    pointer-events: none;
 
     grid-area: Thumb;
 }
@@ -251,13 +261,12 @@ h1{
 
     display: flex;
     flex-wrap: wrap;
+
     grid-area: Skills;
 }
 
 #projects .skills .iconSkill{
     width: 20%;
-
-    pointer-events: none;
 }
 
 .projectsDesc{
@@ -265,9 +274,10 @@ h1{
     max-height: 170px;
 
     border: 5px solid var(--especialColor);
-    padding: 1rem;
-    color: var(--especialColor2);
 
+    padding: 1rem;
+
+    color: var(--especialColor2);
     font-size: 1rem;
 
     grid-area: Desc;
@@ -287,21 +297,21 @@ h1{
 .projectLink{
     height: 70px;
     max-width: 600px;
+
     background-color: var(--especialColor);
-    color: var(--especialColor2);
     padding: 2rem;
     border-radius: 50px;
+
+    color: var(--especialColor2);
+    font-weight: 900;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
-    font-weight: 900;
 }
 
 .linkIcon{
-    
     font-size: 3rem;
 }
 
@@ -324,7 +334,6 @@ h1{
     min-width: 200px;
 }
 
-
 #info{
     width: 50%;
     margin-left: 30px;
@@ -341,6 +350,7 @@ h1{
 footer{
     width: 100%;
     height: 300px;
+    
     padding: 2rem;
 
     display: flex;
@@ -376,7 +386,7 @@ footer{
 }
 
 
-@media (max-width: 1336px){
+@media (max-width: 1600px){
     
     h1{
         font-size: 2rem;
@@ -438,25 +448,17 @@ footer{
     }
     
     #projects .card{
-        width: 80%;
-        padding-bottom: 5%;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .infoProjects{
-        margin: 3%;
-        align-items: center;
-    }
-    
-    .infoProjects .skills{
-        width: 50%;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .projectsIcon img{
-        width: 65%;
+    .projectThumb{
+        width: 250px;
+    }
+
+    #projects .skills{
+        justify-content: center;
     }
 }
 

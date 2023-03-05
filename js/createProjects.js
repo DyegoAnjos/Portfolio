@@ -4,6 +4,7 @@ function createProjects(){
     for(var i=0;i<projectsBd.length;i++){
         const card=document.createElement("div")
         card.classList.add("card")
+        card.style.order=projectsBd[i].order
         projects.appendChild(card)
         const cardDiv=document.querySelectorAll("#projects .card")
 
@@ -55,7 +56,11 @@ function createProjects(){
         linkNameGit.classList.add("linkName")
         linkNameGit.innerText="Repositório do Github"
         projectLinkItemGit[i].appendChild(linkNameGit) 
-    
+
+        if(projectsBd[i].linkGit === "null"){
+            projectLinkItemGit[i].style.display="none"
+        }
+
 
         const repositoriesLink = document.createElement("a")
         repositoriesLink.classList.add("projectLink")
@@ -74,5 +79,9 @@ function createProjects(){
         linkNameRepositories.classList.add("linkName")
         linkNameRepositories.innerText="Projeto Hospedado"
         projectLinkItemRepositories[i].appendChild(linkNameRepositories)
+
+        if(projectsBd[i].linkRepositories === "null"){
+            projectLinkItemRepositories[i].style.display="none"
+        }
     }
 }
