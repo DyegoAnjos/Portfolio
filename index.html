@@ -8,23 +8,29 @@
     <meta name="description" content="Portfólio do Dyego Anjos"/>
     <meta name="keywords" content="html, portfolio, Dyego, Dyego Anjos, front-end, web">
     <meta name="robots" content="index">
+
     <title>Dyego Anjos</title>
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dark-style.css" id="mode">
     <link rel="shortcut icon" href="imgs/logos/FavEscuro.png" type="image/x-icon" id="favicon">
+
+    <link rel="stylesheet" href="css/dark-style.css" id="mode">
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/medias-and-keyframes.css">
+    
 </head>
 <body onload="infos()">
     <div id="transition"></div>
     <header>
-        <p id="name">Dyego Anjos</p>
+        <h2 id="name">Dyego Anjos</h2>
         <nav>
-            <a href="#skills" target="_self">habilidades</a>
+            <a href="#skillsAnchor" target="_self">habilidades</a>
             <a href="#about" target="_self">sobre</a>
-            <a href="#projects" target="_self">projetos</a>
+            <a href="#projectsAnchor" target="_self">projetos</a>
         </nav>
-        <div class="buttons">
-            <p id="modeBtn" onclick="changeMode(1)">White Mode</p>
+        <div id="buttons">
+            <button type="button" id="modeBtn" onclick="changeMode(1)">White Mode</button>
             <a id="emailBtn" href="mailto:dyegocordeiro2007@gmail.com" >Email</a>
         </div>
     </header>
@@ -56,7 +62,7 @@
             desenvolvedor web e programador</h1>
         </div>
        
-        <h2 class="title">Habilidades</h2>
+        <h2 class="title" id="skillsAnchor">Habilidades</h2>
         <div id="skills"></div>
 
         <div id="about">
@@ -70,7 +76,7 @@
             </div>
         </div>
 
-        <h2 class="title">Projetos</h2>
+        <h2 class="title" id="projectsAnchor">Projetos</h2>
         <div id="projects">
             
             

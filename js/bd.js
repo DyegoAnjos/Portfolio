@@ -2,66 +2,84 @@ const skillsBd = [
     {
         icon: "Html.svg",
         name: "HTML",
+        order: 0,
         stars: 5,
         color: "#ef652a"
     },
     {
         icon: "Css.svg",
         name: "CSS",
+        order: 1,
         stars: 4,
         color: "#0089ca",
     },
     {
         icon: "Js.svg",
         name: "JavaScript",
+        order: 2,
         stars: 3,
         color: "#efda4f",
     },
     {
         icon: "C.svg",
         name: "C",
+        order: 7,
         stars: 4,
         color: "#00599c",
     },
     {
         icon: "Cpp.svg",
         name: "C++",
+        order: 8,
         stars: 3,
         color: "#00599c",
     },
     {
         icon: "Cs.svg",
         name: "C#",
+        order: 11,
         stars: "null",
         color: "#390091",
     },
     {
         icon:"Design.svg",
         name:"Web Design",
+        order: 6,
         stars: 2,
         color: "#830A48"
     },
     {
         icon:"Responsivo.svg",
         name:"Responsividade",
+        order: 4,
         stars: 2,
         color: "#001f54"
     },
     {
         icon:"API.svg",
         name:"Integração API",
+        order: 3,
         stars: 3,
         color: "#FAA916"
-    }, 
+    },
+    {
+        icon:"Unity.svg",
+        name:"Unity",
+        order: 9,
+        stars: 1,
+        color: "#000000"
+    },
     {
         icon:"SQL.svg",
         name:"SQL",
+        order: 10,
         stars: "null",
         color: "#db7533"
     },
     {
         icon:"React.svg",
         name:"React",
+        order: 11,
         stars: "null",
         color: "#4395a8"
     },                                                                          

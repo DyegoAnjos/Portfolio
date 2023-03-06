@@ -1,0 +1,137 @@
+.title{
+    border-bottom: 5px solid var(--especialColor);
+    margin: 25px;
+
+    color: var(--especialColor);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card{
+    width: 33%;
+    min-width: 300px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nameSkill{
+    font-size: 70%;
+}
+
+.iconSkill{
+    width: 20%;
+    min-width: 50px;
+
+    margin: 10px;
+}
+
+.levelSkill i{
+    font-size: 80%;
+}
+
+.infos{
+    height: 100px;
+
+    color: var(--especialColor2);
+    font-size: 3rem;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .card{
+    width: 40%;
+
+    border: 5px solid var(--especialColor);
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Thumb Desc" "Skills Links";
+
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.projectThumb, #projects .skills .iconSkill{
+    pointer-events: none;
+}
+
+.projectThumb{
+    width: 300px;
+
+    border: 5px solid var(--especialColor);
+
+    grid-area: Thumb;
+}
+
+#projects .skills{
+    width: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    grid-area: Skills;
+}
+
+#projects .skills .iconSkill{
+    width: 20%;
+}
+
+.projectsDesc{
+    width: 100%;
+    max-height: 170px;
+
+    border: 5px solid var(--especialColor);
+
+    padding: 1rem;
+
+    color: var(--especialColor2);
+    font-size: 1rem;
+
+    grid-area: Desc;
+}
+
+.projectsLinks{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+   grid-area: Links;
+}
+
+.projectLink{
+    height: 70px;
+    max-width: 600px;
+
+    background-color: var(--especialColor);
+    padding: 2rem;
+    border-radius: 50px;
+
+    color: var(--especialColor2);
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.linkIcon{
+    font-size: 3rem;
+}
+
+.linkName{
+    font-size: 1rem;
+    text-align: center;
+}
+

@@ -5,6 +5,7 @@ function createSkills(){
         var starSkills = skillsBd[i].stars
         const cardSkillCreate = document.createElement("div")
         cardSkillCreate.classList.add("card")
+        cardSkillCreate.style.order = skillsBd[i].order
 
         skills.appendChild(cardSkillCreate)
         const cardSkillDiv = document.querySelector("#skills .card")
