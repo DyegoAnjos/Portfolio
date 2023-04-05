@@ -38,7 +38,7 @@ const skillsBd = [
         icon: "Cs.svg",
         name: "C#",
         order: 11,
-        stars: "null",
+        stars: 1,
         color: "#390091",
     },
     {
