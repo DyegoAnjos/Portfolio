@@ -1,7 +1,12 @@
 *{
     --colorBg: #110327;
-    --colorLetter: #ededed;
+
+    --colorLetter: #e8e5ec; /* Iris Isie */
+
     --transparent: hsla(255, 20%, 54%, 0.068); 
-    --especialColor: #c43963;
-    --especialColor2:#9C0D38;
+
+    --especialColor: #ff4466; /* Magic Potion */
+    
+
+    --especialColor2: #e9023a; /* Neon Romance */
 }
